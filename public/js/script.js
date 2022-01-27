@@ -25,4 +25,6 @@
 
 ***/
 
-document.getElementById('load-quote').addEventListener...
+document.getElementById('load-quote').addEventListener("click", function() {
+    console.log("test");
+})
