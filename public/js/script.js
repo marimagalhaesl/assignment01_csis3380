@@ -4,6 +4,7 @@
 /*** 
  * `quotes` array 
 ***/
+let index;
 const quotes = [
     {
         quote: "Do not pity the dead, Harry. Pity the living, and, above all those who live without love",
@@ -46,7 +47,15 @@ const quotes = [
 function getRandomQuote() {
     // 1. Create a variable that generates a random number 
     // between zero and the last index in the `quotes` array
-    const random = Math.floor(Math.random() * quotes.length);
+    let random = Math.floor(Math.random() * quotes.length);
+
+    while(index === random) {
+        random = Math.floor(Math.random() * quotes.length);
+
+        if (index !== random) {
+        break;
+        }
+    }
 
     // 2. Use the random number variable and bracket notation 
     // to grab a random object from the `quotes` array, and
