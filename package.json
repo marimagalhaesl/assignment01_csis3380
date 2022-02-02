@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/marimagalhaesl/assignment01_csis3380#readme",
   "dependencies": {
+    "epress": "^0.0.1-security",
     "express": "^4.17.2",
     "nodemon": "^2.0.15"
-  }
+  },
+  "keywords": []
 }
